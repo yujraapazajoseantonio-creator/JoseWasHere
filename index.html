@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GameHub - Catálogo de videojuegos para Steam">
+  <title>GameHub | Videojuegos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">🎮 Game<span>Hub</span></a>
+
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#gratis">Gratis</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="badge">🎮 CATÁLOGO GAMER</div>
+        <h1>Descubre tu próximo<br><span>videojuego favorito.</span></h1>
+        <p>
+          Explora una colección de videojuegos, encuentra el que más te guste
+          y accede directamente a su página oficial en Steam.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#juegos" class="btn primary">Explorar juegos ↓</a>
+          <a href="#gratis" class="btn secondary">Juegos gratis</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="juegos">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">CATÁLOGO</p>
+          <h2>Videojuegos</h2>
+        </div>
+
+        <div class="search-box">
+          <span>🔎</span>
+          <input type="search" id="search" placeholder="Buscar un juego...">
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="Todos">Todos</button>
+        <button class="filter" data-filter="Acción">Acción</button>
+        <button class="filter" data-filter="Aventura">Aventura</button>
+        <button class="filter" data-filter="Indie">Indie</button>
+        <button class="filter" data-filter="RPG">RPG</button>
+        <button class="filter" data-filter="Supervivencia">Supervivencia</button>
+      </div>
+
+      <div class="games-grid" id="games"></div>
+
+      <div class="empty" id="empty">
+        <div>😵‍💫</div>
+        <h3>No encontramos ese juego</h3>
+        <p>Prueba con otro nombre o cambia el filtro.</p>
+      </div>
+    </section>
+
+    <section class="steam-section" id="gratis">
+      <div class="steam-icon">🎮</div>
+      <div>
+        <p class="section-label">STEAM</p>
+        <h2>¿Buscas juegos gratuitos?</h2>
+        <p>Consulta directamente la sección oficial de juegos Free to Play de Steam.</p>
+      </div>
+      <a
+        href="https://store.steampowered.com/genre/Free%20to%20Play/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary">
+        Ver juegos gratis ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="#" class="logo">🎮 Game<span>Hub</span></a>
+      <p>Un catálogo independiente para descubrir videojuegos.</p>
+    </div>
+    <p class="copyright">© 2026 GameHub</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
